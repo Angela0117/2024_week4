@@ -1,3 +1,636 @@
-.index-title {
-  font-size: 100px;
+
+
+/* 全域設定 */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    /*outline: 1px solid #000000;*/
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body{
+    font-family:"Roboto","Noto Sans TC", sans-serif;
+	line-height: 1.5;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+    color: #FFFFFF;
+}
+
+h2{
+    font-size: 48px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* 重複樣式 */
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 372px;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+.jc-fe{
+    justify-content: flex-end;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
+
+.bg-1{
+    background-color: #AA0601;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.text-14{
+    font-size: 14px;
+}
+.text-20{
+    font-size: 20px;
+}
+
+.text-36{
+    font-size: 36px;
+}
+
+.text-italic{
+    font-size: 48px;
+    color: #AA0601;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.pt-2{
+    padding-top: 8px;
+}
+
+.pt-4{
+    padding-top: 12px;
+}
+
+.pt-6{
+    padding-top: 24px;
+}
+
+.pt-12{
+    padding-top: 48px;
+}
+
+.pt-20{
+    padding-top: 80px;
+}
+
+.pb-2{
+    padding-bottom: 8px;
+}
+
+.pb-8{
+    padding-bottom: 32px;
+}
+
+.pb-20{
+    padding-bottom: 80px;
+}
+
+.mr-6{
+    margin-right: 24px;
+}
+
+.mt-2{
+    margin-top: 8px;
+}
+
+.mt-4{
+    margin-top: 16px;
+}
+
+.mt-6{
+    margin-top: 24px;
+}
+
+.mt-9{
+    margin-top: 36px;
+}
+
+.mb-2{
+    margin-bottom: 8px;
+}
+
+.mb-4{
+    margin-bottom: 16px;
+}
+
+.mb-6{
+    margin-bottom: 24px;
+}
+
+.mb-12{
+    margin-bottom: 48px;
+}
+
+.gap-8{
+    gap: 32px;
+}
+
+.gap-12{
+    gap: 48px;
+}
+
+.w-50{
+    width: 50%;
+}
+
+
+
+/* nav */
+
+nav ul{
+    gap: 64px;
+    padding: 25px 0px;
+}
+
+.nav-img img{
+    width: 80px;
+}
+
+nav li a:hover{
+    color: #DEE2E6;
+}
+
+
+/* nav RWD */
+
+@media (max-width: 768px) {
+
+    .nav-content{
+        flex-direction: column;
+    }
+    
+    .nav-img{
+       padding: 12px 0px;
+    }
+
+    nav ul{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0;
+        margin: 0px -12px;
+    }
+
+    nav ul li{
+        width: 50%;
+        border: #ffffff 1px solid;
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0;
+        flex-wrap: wrap;
+        padding: 12px 62px;
+    }
+    }
+
+/* header */
+
+.header-bg{
+    max-width: 100%;
+    height: calc(100vh - 80px);/*使背景符合100%瀏覽器大小，並扣除nav的80高度*/
+    /*height: 787px;*/
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-bg .container{
+    height: 100%;
+}
+.header-text{
+    text-align: right;
+}
+
+.header-text p{
+    font-size: 36px;
+    color: #650300;
+}
+
+.header-text h1{
+    font-size: 64px;
+    color: #650300;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.header-btn{
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 104px;
+    background: #AA0601;
+    text-align: center;
+    padding: 6px 12px;
+}
+
+.header-btn:hover{
+    background: #650300;
+ }
+
+ /* header RWD */
+
+@media (max-width: 768px) {
+
+    .header-bg{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    }
+
+    .header-text{
+        display: block;
+    }
+    
+    .header-text p{
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 24px;
+    }
+}
+
+/* intro */
+
+.bg-2{
+    background: #FBF2F2;
+}
+
+.intro-item{
+    width: 25%;
+}
+
+.intro-img{
+    width: 83.83px;
+    height: 83.83px;
+    margin: 0 auto;
+}
+
+.intro h3{
+    font-size: 24px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* intro RWD */
+
+@media (max-width: 992px) {
+
+    intro.container{
+        padding: 0px 36px;
+    }
+
+    .intro-list{
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 24px;
+    }
+    
+    .intro-item{
+        width: 48%;
+        margin-right: 0px;
+    }
+    
+}
+@media (max-width: 768px) {
+
+    .intro h2{
+        font-size: 24px;
+    } 
+    
+    .intro-list{
+        flex-wrap: wrap;
+    }
+    
+    .intro-item{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro-img{
+        margin-top: 24px;
+    }
+}
+
+/* product */
+
+.product-item{
+    width: 33.3333%;
+}
+
+.product img{
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* product  RWD */
+
+@media (max-width: 992px) {
+
+    .product-list{
+        flex-wrap: wrap;
+    }
+    .product-item{
+        width: 100%;
+        margin: 0px;
+        text-align: center; 
+    }
+    .product img{
+        width: 336px;
+        height: 336px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .product h2{
+        font-size: 24px;
+    }
+    .product-list{
+        flex-wrap: wrap;
+    }
+    .product-item{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+/* content */
+
+.content{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content h2{
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    
+}
+
+.content-text{
+    width: 100%;
+    background: #FFFFFF;
+}
+
+/* content  RWD */
+
+@media (max-width: 992px) {
+
+    .content{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+        background-position: center;
+    }
+
+    .content-list{
+        flex-wrap: wrap;
+    }
+
+    .content-item{
+       width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .content{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+    }
+
+    .content-list{
+        flex-wrap: wrap;
+    }
+
+    .content-item{
+       width: 100%;
+    }
+}
+
+/* recommend */
+
+.recommend-item{
+    width: 25%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+
+.recommend-content{
+    padding: 16px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommend-p{
+    color: #707070;
+    font-size: 14px;
+}
+
+/* recommend  RWD */
+
+@media (max-width: 992px) {
+
+    .recommend-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+    .recommend-item{
+        width: 48%;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .recommend-list{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .recommend-item{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* contact */
+
+.contact-content{
+    width: 636px;
+}
+
+.contact-block{
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.pb3{
+    padding-bottom: 6px;
+}
+
+.pb106{
+    padding-bottom: 106px;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.contact-btn{
+    width: 416px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background: #AA0601;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.contact-btn:hover{
+   background: #650300;
+}
+
+/* contact  RWD */
+
+@media (max-width: 992px) {
+
+    .contact-content{
+        width: 576px;
+    }
+
+    .contact-content p,li{
+        font-size: 16px;
+    }
+
+    .contact-btn{
+        width: 336px;
+        font-size: 16px;
+    }
+}
+
+/* footer */
+
+.footer-content{
+    border-bottom: 1px solid #FFFFFF ;
+    margin-bottom: 32px;
+}
+
+.footer-list li a:hover{
+    color: #DEE2E6;
+}
+
+.material-symbols-outlined{
+    color: #FFFFFF;
+    margin-right: 22px;
+}
+
+.footer-img img{
+    width: 48px;
+    height: 48px;
+}
+
+.footer-content span{
+    font-size: 36px;
+}
+
+/* footer  RWD */
+
+@media (max-width: 768px) {
+
+    footer{
+        font-size: 16px;
+    }
+
+    .footer-content{
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+   .mt-0{
+    margin-top: 0px;
+   }
+
+    .footer-list{
+        display: none;
+    }
+
+    .footer-item{
+        font-size: 16px;
+    }
+
+    .footer-content span{
+        font-size: 16px;
+    }
+
+    .footer-img img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-item-4{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-item-p{
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
 }
