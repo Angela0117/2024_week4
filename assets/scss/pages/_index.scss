@@ -237,7 +237,7 @@ nav li a:hover{
     max-width: 100%;
     height: calc(100vh - 80px);/*使背景符合100%瀏覽器大小，並扣除nav的80高度*/
     /*height: 787px;*/
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-image: url(../images/home-header.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ nav li a:hover{
 @media (max-width: 768px) {
 
     .header-bg{
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+        background-image: url(../images/home-header-sm.png);
     }
 
     .header-text{
@@ -408,7 +408,7 @@ nav li a:hover{
 /* content */
 
 .content{
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-image: url(../images/index-bg.png);
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -430,7 +430,7 @@ nav li a:hover{
 @media (max-width: 992px) {
 
     .content{
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+        background-image: url(../images/index-bg-md.png);
         background-position: center;
     }
 
@@ -446,7 +446,7 @@ nav li a:hover{
 @media (max-width: 768px) {
 
     .content{
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+        background-image: url(../images/index-bg-sm.png);
     }
 
     .content-list{
