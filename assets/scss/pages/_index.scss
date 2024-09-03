@@ -302,6 +302,10 @@ nav li a:hover{
     background: #FBF2F2;
 }
 
+.intro-list{
+  gap: 24px;
+}
+
 .intro-item{
     width: 25%;
 }
@@ -332,7 +336,6 @@ nav li a:hover{
     .intro-list{
         flex-wrap: wrap;
         justify-content:center;
-        gap: 24px;
     }
     
     .intro-item{
