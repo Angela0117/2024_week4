@@ -1,0 +1,28 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    /*outline: 1px solid #000000;*/
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  body{
+    font-family:"Roboto","Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  }
+  
+  a{
+  text-decoration: none;
+  display: inline-block;
+    color: #FFFFFF;
+  }
+  
+  h2{
+    font-size: 48px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center;
+  }
