@@ -1,0 +1,58 @@
+.content-title{
+    color: #000000;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+
+}
+
+.store-search-select{
+    font-size: 18px;
+    color: #495057;
+    margin-left: 16px;
+}
+
+.store-list{
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
+.store-item{
+    width: calc(33.3333% - 16px);
+    color: #212529;
+    &-content{
+        border-top: 1px solid #00000020;
+        & a{
+            color: #212529;
+        }
+    }
+
+}
+
+.store-title{  
+    font-size: 24px;
+    padding: 8px 0px 8px 24px;
+}
+
+.store .material-symbols-outlined{
+    color: #212529;
+    margin-right: 11px;
+  }
+
+.store-btn{
+    width: 100%;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &:hover{
+        background:  #495057;
+      }
+  }
+
+  
